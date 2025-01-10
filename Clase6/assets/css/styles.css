@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hijo{
+    padding: 10px;
+    margin: 10px;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    /*me separa todo en 3 columnas con las dimenciones de arriba*/
+    grid-template-rows: 300px 200px;
+    /*me separa todo en 2 filas con las dimenciones de arriba*/
+    /* tambien puedo ponerle por porcetajes */
+    grid-template-rows: repeat(12,1fr);
+    /*me separa todo en 12 filas de igual dimsnecion / 1fr es una fraccion de espacio disponible*/
+}
+
+/*La diferencia entre align-items y align-content es que align-items se aplica a los elementos hijos de un contenedor flexbox, mientras que align-content se aplica a los elementos flexbox en sí.*/
+/* cuando dice content me lo alinea dentro del contenedor, en cambio si uso item es para el item individualmente
+ */
+
+ .hijo1{
+    justify-self: start;
+    /*me alinea el item (solo ese item) a la izquierda*/
+    align-self: end;
+ }
+

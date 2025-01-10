@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    border-radius: 50px;
+    margin: 10px;
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    /* iteration count es cuantas veces se va a repetir la animacion */
+    animation-delay: 2s;
+    /* delay es el tiempo que va a esperar para empezar la animacion */
+}
+
+.circulo2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50px;
+    margin-top: 150px;
+    animation-name: mover2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    /* timing function es la aceleracion de la animacion */
+    /*cibic-bezier.com */
+}
+
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(100px);
+    }
+
+    50%{
+        transform: translate(100px,100px);
+    }
+
+    75%{
+        transform: translate(0px,100px);
+    }
+
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes mover2{
+    0%{
+        transform: translate(0);
+    }
+
+    50%{
+        transform: translate(300px);
+    }
+
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+.titulo{
+    margin: 10px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/*https://michalsnik.github.io/aos/ PAGINA QUE TIENE ANIMACIONES 
+PARA USARLO VOY ABAJO DE LA PAGINA. COPIO EL LINK DE CSS. LO PEGO EN EL INDEX
+DE HTML. DESPUES PEGO EL DE JS Y LO PEGO AL FINAL DEL BODY Y EL INITIALIZE AOS 
+VA ABAJO DEL SCRIPT DE JAVASCRIPT
+despues copio dentro del div la animacion que me gusto y lo pego en el elento (
+en el .html que quiero que haga esa animacion*/
+
+.img{
+    width: 200px;
+    margin: 15px;
+}
+

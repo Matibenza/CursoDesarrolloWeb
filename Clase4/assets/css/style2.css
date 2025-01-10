@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja{
+    width: 300px;
+    /*height mucho no me conviene usarlo porque si el contenido es mas grande que la caja, 
+    se va a salir de la caja*/
+    background-color: blue;
+    padding:30px;
+    /*el pading es el espacio que hay entre el contenido y el borde de la caja, es un espacio por dentro*/
+    border-color: red;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 10px;
+    /*el margin es el espacio que hay entre la caja y las demas cajas, es un espacio por fuera*/
+
+    /*QUEDE EN LA HORA Y 16 MINUTOS*/
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <nav>
+
+    </nav>
+
+
+    <header>
+        <h1>Contactos</h1>
+    </header>
+
+
+    <main>
+
+        <form action="" method="post">
+            <!-- action es la url a la que se va a enviar el formulario -->
+            <!-- method es el metodo que se va a usar para enviar el formulario, si es post se va a mandar
+             sin que se vea la informacion en la URL -->
+            <fieldset>Ingrese informacion personal
+                <input type="text" name="nombre" id="nombre" placeholder=" Ingrese su nombre" required>
+                <!-- required es para que el campo sea obligatorio -->
+                <input type="number" name="dni" id="dni" placeholder=" Ingrese su dni">
+                <input type="email" name="email" id="email" placeholder=" Ingrese su email">
+            </fieldset>
+            
+           <!-- <textarea name="comentario" id="comentario">Ingrese su comentario</textarea>
+            El placeholder es lo que me va a mostar dentro de la etiqueta
+             textArea es un texto mas grande  -->
+
+             <div>
+                <label for="sexo">Hombre</label>
+                <input type="radio" name="sexo" id="sexo" value="h">
+
+                <label for="sexo">Mujer</label>
+                <input type="radio" name="sexo" id="sexo" value="m">
+             </div>
+
+             <div>
+                <label for="terminos">Acepto los terminos y condiciones</label>
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <!-- required es para que el campo sea obligatorio -->
+             </div>
+
+             <select name="pais" id="pais">
+                <option value="ar">Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="ch">Chile</option>
+                <option value="ur">Uruguay</option>
+            </select>
+
+            <br>
+            <input type="submit" value="Enviar">
+            <!-- Hay tres tipos de boton Action que es para mandar el formulario, RESET que es para borrar 
+             todo lo que esta dentro del formulario y submit que es cuando uso javascript -->
+        </form>
+
+        
+    </main>
+
+
+    <aside>
+
+    </aside>
+
+    <footer>
+        <h5> derechos de autor xxx</h5>
+    </footer>
+
+</body>
+</html>

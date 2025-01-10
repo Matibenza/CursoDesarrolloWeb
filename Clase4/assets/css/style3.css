@@ -1,0 +1,87 @@
+.caja{
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    overflow: hidden;
+    height: 100px;
+    /* overflow permite que el contenido se muestre dentro de la caja 
+    USO OVERFLOW CUANDO USO HEIGHT. EN CASO QUE NO LO USE LA ALTURA SE REGULA AUTOMATICAMENTE CON EL CONTENIDO*/
+    /* overflow hidden oculta el contenido que se sale de la caja, es decir si se sobre sale de la caja no se muestra
+    se recorta. Tambien esta la opcion overflow scroll, que es para que en caso que el contenido sea mas grande que la caja
+    voy a poder scrollear para ver todo el contenido. Overflow AUTO me lo agrega solo si hace falta */
+}
+
+p{
+    display: inline;
+    /* display inline hace que el elemento se muestre en la misma linea que el elemento anterior.
+    hay elementos que son en bloque, es decir que ocupan toda la pantalla y otros en linea, que son uno al lado
+    del otro. Los elementos inline no tienen ni alto ni ancho 
+    DISPLAY INLINE INLINE-BLOCK  toma las mejores propiedaddes de cada una. Se puede poner una al lado del otro
+    pero le puedo  cambiar las propiedades del alto y anchlo. NO SE USA MUCHO. SE USA MAS FLEXBOX
+    DISPLAY NONE es para que desaparezca el elemento*/
+}
+
+.resaltar{
+    color: blue;
+    font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja2{
+    width: 200px;
+    margin: 10px;
+    background-color: blue;
+    padding: 10px;
+    z-index: 10;
+    /* z-index es para que el elemento se muestre por encima de los demas elementos. Si tengo un elemento con z-index 10 y otro con z-index 5 se va a mostrar por encima el de 10 */
+}
+
+.ContenedorParrafos{
+    height: 1800px;
+    background-color: yellow;
+}
+
+.NavBar{
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    background-color: cornflowerblue;
+    position: sticky;
+    /* sticky es para que el elemento se quede fijo en la pantalla. Si hago scroll el elemento se va a quedar fijo en la pantalla */
+    top: 0;
+    /* top 0 es para que el elemento se quede fijo en la parte superior de la pantalla, en este caso que tengo imagen y cosas arriba cuando haga scrpll para abajo el nav se 
+    va a quedar en la parte de arriba y va a ir bajando */
+    z-index: 20;
+}
+
+.NavBar ul{
+    list-style: none;
+}
+
+.NavBar ul li{
+    display: inline-block;
+    /* display inline-block es para que los elementos se muestren uno al lado del otro */
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+
+.sublista{
+    display: none;
+}
+
+/*hover es cuando le pase el mouse por encima*/
+.NavBar ul li:hover > ul{
+    display: block;
+    /* cuando hago hover en el li se va a mostrar la sublista */
+    position: absolute;
+    /* absolute es para que la sublista se muestre en la parte superior de la pantalla */
+    background-color: cornflowerblue;
+    margin-top: 20px;
+}

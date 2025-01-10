@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px 200px auto auto 80px;
+    grid-template-areas: "navBar navBar navBar navBar"
+                         "header header header header"
+                         "main   main   main   main  "
+                         "sidebar sidebar sidebar sidebar"
+                         "footer footer footer footer";
+}
+
+.navBar{
+    grid-area: navBar;
+    background-color: #0a1266;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.navBar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navBar ul li{
+    padding: 20px;
+
+}
+
+.navBar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.header{
+    grid-area: header;
+    background-image: url(../img/horizontal.png); 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.header h1{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+.header p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+.btn{
+    background-color: #0a1266;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.main{
+    grid-area: main;
+}
+
+.main h2{
+    padding: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.cardInfo{
+    width: 240px;
+}
+
+.card img{
+    width: 150px;
+    /*object fit es para que la imagen se ajuste al tamaño del contenedor*/
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+
+@media (min-width: 576px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        grid-template-rows: 80px 200px auto 80px;
+        grid-template-areas: "navBar navBar navBar navBar"
+                             "header header header header"
+                             "main   main   main   sidebar "
+                             "footer footer footer footer";
+    }
+
+}
+
+
+@media(min-width: 768px){
+    .container{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 80px 200px auto 80px;
+        grid-template-areas: "navBar navBar navBar navBar navBar"
+                             "header header header header header"
+                             "main   main   main   sidebar sidebar "
+                             "footer footer footer footer footer";
+    }
+}

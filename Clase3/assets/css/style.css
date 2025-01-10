@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* EL ASTERISCO SIGNIFICA QUE ME VA A SACAR EL MARGEN Y EL PADDING DE TODOS LOS ELEMENTOS,
+hay elementos que ya predifindos tienen valores  */
+
+h1{
+    color: red;
+    text-align: center;
+    background-color: beige;
+}
+
+div h5{
+    font-size: 24px;
+}
+/* Aca lo que estoy diciendo es que me cambie las propiedades del h5 que esta dentro de un div */
+
+.tarjeta{
+    background-color: brown;
+}
+
+.tarjeta img{
+    width: 100%;
+}
+/* Toma el 100 por ciento del padre, es decir del div. No toma el 100 por ciento de la pantalla. */
+
+.tamanioTarjeta{
+    width: 50%;
+}
+/* Para que me aplique las propiedades a una clase el nombre debe ir precedido de un punto.
+Puedo tener mas de una clase, tarjeta fondoTarjeta */
+
+#PiePagina{
+    background-color: black;
+    color: white !important;
+    text-align: center;
+}
+/* Cuando uso id tengo que usar # Primero*/
+/*ID TIENE MAS PESO QUE LA CLASE Y LA CLASE TIENE MAS PESO QUE LA ETIQUETA
+si uso !IMPORTANT va a quedar con ese, rompe la presedencia*/
+
+.ParrafoNosotros{
+    font-size: 18px;
+    text-align: left;
+}
+
+ul{
+    margin: 25px;
+    list-style: none;
+    /* Para sacar los puntos de la lista */
+}
+
+.DescripcionUbicacion{
+    font-weight: 600;
+    /* Para que me ponga en negrita */
+    line-height:5;
+    /* Para que me ponga un espacio entre las lineas */
+    text-decoration: underline;
+    /* Para que me ponga subrayado o distintos estilos */
+    font-family: 'Courier New', Courier, monospace;
+    /* Para que me ponga una fuente distinta */
+    /* PUEDO DESCARGAR FUENTES DE GOOGLE FONTS */
+}
+
+.cuadrado{
+    background-image: url("../img/images.jpeg");
+    background-size: cover;
+    /* Para que la imagen se vea completa */
+    background-repeat: no-repeat;
+    /* Para que no se repita la imagen */
+    background-attachment: fixed;
+    /* Para que la imagen no se mueva me genera un efecto visual cuando voy bajando */
+    
+    width: 100%;
+    height: 300px;
+}

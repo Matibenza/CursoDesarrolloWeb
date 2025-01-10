@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    width: 300px;
+   /* background-image: linear-gradient(to right, #f00, #0f0, #00f);
+    /*crear caja con colores graduales*/
+    background-image: radial-gradient(circle, #f00, #0f0, #00f);
+    background: radial-gradient(ellipse at center, #CE1B07 0%, #A43131 50%, #C56A60 100%);
+    margin: 10px;
+    padding: 10px;
+
+    /*https://html-css-js.com/css/generator/gradient/ PAGINA PARA HACER GRADIALES uso el de la ultima linea
+    **/
+    /*FOTOR.COM EN LA WEB PARA ACHICAR EL TAMAñO DE UNA IMAGEN */
+}
+
+.caja:hover{
+    width: 400px;
+    transition: all 2s;
+}
+
+.imgTransformaciones{
+    width: 200px;
+
+    transition: all 1s;
+    /*tarda un segundo en moverse */
+}
+
+
+.img1:hover{
+    transform: translate(100px,5px) scale(1.5);
+     /*translate mueve la imagen en el eje x y en el eje y */
+     /*scale aumenta el tamaño de la imagen */
+}
+
+.img2:hover{
+    transform: rotate(360deg);
+    /*rota la imagen 45 grados */
+}
+
+.img3:hover{
+    transform: rotateX(360deg)
+}
+
+.img4:hover{
+    transform: scale(1.2);
+}
+
+.zoom{
+    width: 200px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 0px;
+}
+
+.img5:hover{
+    transform: skewY(10deg);
+}
+
+.form input:focus{
+    width: 300px;
+    border: 5px solid red;
+}
+

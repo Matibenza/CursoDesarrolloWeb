@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px 100px;
+    grid-template-areas: "nav header header header"
+                         "nav main    main aside"
+                         "nav main main aside"
+                         "nav footer footer footer";
+    /*indico que parte va a ocupar cada cosa en el grid*/
+    row-gap: 10px;
+    /*espacio entre filas*/
+    column-gap: 10px;
+    /*espacio entre columnas*/
+}
+
+.navegador{
+    grid-area: nav;
+    /*el navegador ocupa el espacio de grid ( de la estructura de arriba) */
+background-color: yellow;    
+}
+
+.encabezado{
+    grid-area: header;
+    background-color: red;
+}
+
+.principal{
+    grid-area: main;
+    background-color: green;
+}
+
+.secundario{
+    grid-area: aside;
+    background-color: blue;
+}
+
+.pie{
+    grid-area: footer;
+    background-color: pink;
+}

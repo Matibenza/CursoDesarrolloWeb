@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    color:brown;
+    margin: 10px;
+}
+
+.tarjeta{
+    width: 250px;
+    margin: 10px;
+}
+
+.tarjeta__titulo{
+    text-align: center;
+}
+
+.tarjeta__imagen{
+    width: 100%;
+}
+
+.tarjeta__boton{
+    margin: 10px;
+}
+
+.tarjeta__descripcion{
+    margin: 5px;
+}
+
+.tarjeta__descripcion--negrita{
+    font-weight: bold;
+}
