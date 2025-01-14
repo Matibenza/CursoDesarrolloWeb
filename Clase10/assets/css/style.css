@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja{
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+    text-align: center;
+}
+
+.contenedorCaja{
+    display: flex;
+    /*flex se aplica siempre al padre
+    tiene la particularidad de que cuando no entra el contenido lo achica, es decir si dentro tengo mas cajas, el
+    width en vez de ser de 100 va a ser menor para que entren todas las cajas. SOLUCION A ESTO FLEX WRAP*/
+    flex-direction: row;
+    /*flex direction es la direccion en la que me va a poner el resto de las cajas, es decir en filas/ columnas*/
+    flex-wrap: wrap;
+    /*flex wrap es la propiedad que me permite que las cajas se acomoden una arriba de la otra en caso de que no entren*/
+    justify-content: space-evenly;
+    /*justify-content es la propiedad que me permite centrar las cajas dentro del contenedor padre. horizontalmente*/
+    /*justifycontent para alinear las cajas, text align para alinear el texto*/
+    height: 200px;
+    align-items: center;
+    /*align-items es la propiedad que me permite centrar las cajas en el eje vertical*/
+    align-content: stretch;
+    /*align-content es la propiedad que me permite centrar las cajas en el eje vertical cuando hay mas de una fila*/
+    /*strech va a hacer que las cajas se estiren para que ocupen todo el espacio*/
+}
+
+.caja1{
+    order:3;
+    /*order es la propiedad que me permite ordenar las cajas, es decir si quiero que una caja este antes que otra*/
+}
+
+.caja4{
+    order: 4;
+
+}
