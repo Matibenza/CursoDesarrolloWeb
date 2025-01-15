@@ -1,0 +1,24 @@
+FORMAS DE INSTALAR BOOTSRAP
+Para tenerlo tengo que ir a la pagina de bootstrap. A la parte que dice 
+include via CDN y copiar la parte del link y linkearlo a mi proyecto y linkear la parte de js al final de mi proyecto(abajo del footer)
+
+Bootsrap -> Son 12 columnas 
+
+clases Descripcion valores
+
+container Establece un ancho máximo con márgenes para cada tamaño de pantalla.
+container-fluid Establece un ancho máximo sin márgenes para cada tamaño de pantalla.
+row Establece una fila para todos los elementos dentro del contenedor con esta clase.
+col Pantalla menores a 576 píxeles De 1 a 12
+col-sm- Pantallas mayores a 576 píxeles De 1 a 12
+col-md- Pantallas mayores a 768 píxeles De 1 a 12
+col-lg- Pantallas mayores a 992 píxeles De 1 a 12
+col-xl- Pantallas mayores a 1200 píxeles De 1 a 12
+col-xxl- Pantallas mayores a 1400 píxeles De 1 a 12
+justify-content- start/center/end/around/evenly/between
+align-items- start/center/end/stretch
+m -> agrega margenes. MT superior. MB inferior. MY agrega margenes en el eje verticales. DE 0 A 5
+p -> padding. de 0 a 5
+
+
+

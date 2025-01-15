@@ -1,0 +1,31 @@
+PARA USAR GITHUB 
+1- Voy a la pagina de internet de GITHUB
+2- Voy a mi nombre y voy a your repositories
+3- new -> creo un repositiorio. Una vez que lo cree copio el link 
+https://github.com/Matibenza/CursoDesarrolloWeb.git
+4-Comandos
+-git remote add origin https://github.com/Matibenza/CursoDesarrolloWeb.git (LO HAGO LA PRIMERA VEZ)
+
+-git push -u origin master (rama)
+-SI YA HICE UN PUSH U ANTES LA PROX SOLO USO PULL PUSH
+
+-GIT PULL es para traer los cambios que hice desde github (ejemplo cambie el codigo desde la pagina y los quiero traer a mi proyecto)
+
+-SI HAGO UN CAMBIO TENGO QUE HACER GIT ADD. GIT COMMIT -M "MENSAJE" DESPUES HAGO GIT PUSH Y SE SUBE A GIT HUB
+
+
+REPASO SI SUBO DESDE  
+1. GIT INIT
+2. GIT ADD .
+3. GIT STATUS -S
+4. GIT COMMIT -M MENSAJE
+5. VOY A LA PAGINA DE GITHUB A CREAR REPOSITORIO. COPIO EL LINK
+6. GIT REMOTE ADD ORIGIN ANTERIRO
+7. GIT PUSH -U ORIGIN MASTER
+
+SI NO TENGO UN ARCHIVO Y LO QUIERO PASAR A MI COMPU
+- Abro en la carpeta que quiero tener ese archivo -> click izquiero git bash here -> git clone y el link del repositiorio 
+
+COMPARTIR UNA PAGINA DE MI PROYECTO
+- Configuracion (desde mi proyecto) -> pages ->branch (rama que quiero compartir) ->carpeta root -> save
+

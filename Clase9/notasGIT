@@ -1,0 +1,64 @@
+GIT SIRVE PARA IR GUARDANDO VERSIONES DE NUESTRO PROYECTO
+
+
+LA CONFIGURACION DE GIT SE HACE SOLO UNA VEZ POR COMPUTADORA
+* git config --global user.name "matibenza" -> creo usuario
+* git config user.name -> para ver el nombre de usario
+* git config --global user.email "benzamatias@gmail.com" -> creo email
+* git config user.email -> para ver el email
+
+
+PARA USAR FIT EN VISUAL STUDIO CODE
+TERMINAL -> NUEVA TERMINAL. Si se abre la terminar de windows. Voy al mas + (al lado de donde dice powershell) y selecciono git bash
+En la terminal:
+* git init -> inicializo git. Se usa una sola vez por PROYECTO
+
+* git status -s -> me muestra el estado de los archivos en el repositorio de manera abreviada.
+si tiene ?? es porque no esta en el repositorio. Si tiene A es porque esta en el repositorio.
+Si tiene M es porque se modifico el archivo (lo tenia guardado e hice una modificacion sobre ese archivo)
+Si esta en rojo es porque no esta guardado en el repositorio, si esta en verde es porque esta guardado en el repositorio
+y esta listo para hacer el comit 
+
+* git add . -> agrega todos los archivos al repositorio
+*git add index.html -> agrega un archivo al repositorio (no agrega todos los archivos)
+
+*git restore ./assets/css/style.css -> deshace los cambios de un archivo que no se guardo en el repositorio. Me borra todo
+
+* git commit -m "mensaje" -> guarda los archivos en el repositorio. Se usa siempre que se quiera guardar una version
+
+*git log --oneline -> muestra las versiones guardadas de manera abreviada
+
+*git checkout NumeroAmarillo y te vuelve a esa vetrsion (es mejor usar el historial de git history)
+
+Cada commit que haga es una nueva version que creo del proyecto
+DESCARGAR EXTENCION GIT HISTORY PARA VER LOS CAMBIOS DE CADA VERSION y GIT GRAPH para ver los branchs
+
+
+TRABAJAR CON RAMAS 
+* git branch -> para ver las tamas que tengo
+*git branch "mati" -> creo RAMA
+*git checkout "ramaJuli"-> me cambio a la rama ramaJuli
+* git branch -D -> eliminar rama
+*git merge "ramaJuli" -> unir ramas (LAS TENGO QUE UNIR DESDE MASTER)
+
+OTROS COMANDOS
+*touch index.html -> creo un nuevo archivo
+*mkdir creo carpeta
+*cd moverme entre carpetas. cd.. vuelvo atras
+*rm para borrar archivo 
+*rm -r eliminar carpeta
+*ls  listar archivos y carpetas de donde estoy
+*clear limpia consola
+*mv es para mover archivos o renombrar mv index.html pagina.html. Cambio de index a pagina
+mv index.html ./pages -> me lo mueve a la pagina pages
+*pwd te muestra la ubicacion del archivo en la computadora (en donde esta ese archivo en la pc )
+*cp copiar archivo. cp- r copia una carpeta 
+cp index.html ./pages me lo pega a esa carpeta
+
+
+
+
+
+
+
+
