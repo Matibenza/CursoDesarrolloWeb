@@ -1,0 +1,72 @@
+.miEstilo{
+    background-color: red;
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 768px) and (max-width:1200px) {
+    /*esto lo va a hacer desde los 768px a los 1200*/
+    .miEstilo{
+        background-color: blue;
+        width: 200px;
+    }
+
+    .contenedor{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.navbar{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar ul{
+    width: 100%;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar ul li{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar input{
+    display: none;
+}
+
+.navbar input :checked + ul {
+    display: flex;
+}
+
+.navbar label{
+    color: wheat;
+    font-size: 24px;
+    padding: 10px;
+}
+
+@media(min-width:768px){
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+}

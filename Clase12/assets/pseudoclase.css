@@ -1,0 +1,54 @@
+.boton{
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: burlywood;
+    margin: 10px;
+}
+
+.botones{
+    display: flex;
+}
+
+.boton:hover{
+    background-color: red;
+}
+/* Cuando pase el mouse por arriba el color del boton va a ser rojo*/
+
+.boton:active{
+    background-color: brown;
+}
+/*cuando estoy apretando el boton pero todavia no solte el mouse*/
+
+.boton:visited{
+    color:black
+}
+/* una vez que el sitio a donde me llevo la etiqueta fue visitado va a hacer lo que diga abajo */
+
+.formulario{
+    margin: 10px;
+}
+
+.formulario input:focus{
+border: 2px solid black;
+}
+/* es cuando le hice click a la caja de texto*/
+
+div:not(botones){
+    font-size: 24px;
+}
+/* Aplica esa propiedad a todos los div menos al div que tiene clase botones*/
+
+.parrafosImagenes p{
+    padding:10px
+}
+
+.parrafosImagenes img:nth-child(4){
+    width: 50px;
+}
+/* El child no es por numero de ese elemento especifico si no que es en general
+es decir tengo 3 parraffos arriba y el 4 es una imagen. Es el hijo de ese div*/
+
+.parrafosImagenes img:nth-of-type(1){
+    width: 500px;
+}
