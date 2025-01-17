@@ -1,0 +1,20 @@
+//paso a escribir mi codigo de css aca en SAS. Se pasa solo a mi css
+//Ventajas con SAS puedo anidar las tarjetas, puedo aplicar el &. Puedo tener variables
+//Las hojas que tienen _ no se compilan. Las uso solo para importar
+
+//puedo tener una hoja de SAS por cuantas quieras tener
+// por ejemplo hojas para variables, para el main, etx
+
+@import "nav";
+@import "main";
+@import "footer";
+@import "variables";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+

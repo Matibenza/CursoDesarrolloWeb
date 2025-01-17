@@ -52,3 +52,4 @@ es decir tengo 3 parraffos arriba y el 4 es una imagen. Es el hijo de ese div*/
 .parrafosImagenes img:nth-of-type(1){
     width: 500px;
 }
+/* este si lo hace por cada tipo de elemento */

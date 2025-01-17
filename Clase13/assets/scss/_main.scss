@@ -1,0 +1,21 @@
+.post{
+    background-color: $ColorPrimario;
+    border-radius: 5ps;
+    padding: 8px 15px;
+    color:white;
+    h5{
+        font-size:$tamanioTitulo ;
+    }
+    p{
+        font-size:$tamanioTexto ;
+    }
+    button{
+        border:0;
+        border-radius: 5px;
+        padding: 8px 15px;
+        background-color: white;
+        &:hover{
+            background-color: wheat;
+        }
+    }
+}

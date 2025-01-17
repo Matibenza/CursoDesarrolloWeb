@@ -1,0 +1,22 @@
+.navBar{
+    background-color:rgb(235,126,49) ;
+    margin: 10px;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        li{
+            padding: 10px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                opacity: .80;
+                &:hover{
+                    opacity: 1;
+                }
+                //Al a le aplica todas esas cosas Y cuando el mouse pasa por arriba -> opacidad 1
+            }
+        }
+    }
+}

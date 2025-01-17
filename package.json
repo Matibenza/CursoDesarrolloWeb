@@ -1,0 +1,28 @@
+{
+  "name": "cursodesarrolloweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss Clase13/assets/scss/styles.scss Clase13/assets/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matibenza/CursoDesarrolloWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matibenza/CursoDesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/Matibenza/CursoDesarrolloWeb#readme",
+  "description": "",
+  "dependencies": {
+    "D": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

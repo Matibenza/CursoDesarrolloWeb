@@ -1,0 +1,53 @@
+.navBar {
+  background-color: rgb(235, 126, 49);
+  margin: 10px;
+}
+.navBar ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+.navBar ul li {
+  padding: 10px;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+}
+.navBar ul li a:hover {
+  opacity: 1;
+}
+
+.post {
+  background-color: rgb(235, 126, 49);
+  border-radius: 5ps;
+  padding: 8px 15px;
+  color: white;
+}
+.post h5 {
+  font-size: 32px;
+}
+.post p {
+  font-size: 20px;
+}
+.post button {
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color: white;
+}
+.post button:hover {
+  background-color: wheat;
+}
+
+footer {
+  background-color: rgb(235, 126, 49);
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
