@@ -2,6 +2,8 @@ FORMAS DE INSTALAR BOOTSRAP
 Para tenerlo tengo que ir a la pagina de bootstrap. A la parte que dice 
 include via CDN y copiar la parte del link y linkearlo a mi proyecto y linkear la parte de js al final de mi proyecto(abajo del footer)
 
+GRILLA NAVBAR Y EL SLIDER ES LO QUE MAS SUELO USAR CON BOOTSTRAP
+
 Bootsrap -> Son 12 columnas 
 FREEPIK para descargar imagenes de buena calidad
 FOTOR para bajar la calidad de las imagenes

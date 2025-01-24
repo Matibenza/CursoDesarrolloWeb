@@ -1,0 +1,28 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 10 {
+    //si pongo from 1 to 10 el 10 no lo incluye
+    .col-#{$i} {
+        width: 10% * $i;
+    }
+}
+
+@media(min-width: 768px){
+    @for $i from 1 through 10 {
+        .col-md-#{$i} {
+            width: 10% * $i;
+        }
+    }
+}
+
+@each $clave, $var in $justify {
+    .justify-content-#{$clave} {
+        justify-content: #{$var};
+    }
+    //CLAE ASUME LO DE LA PRIMERA PALABRA. VALOR ASOME LO DE LA SEGUNDA PALABRA
+    //esto es para que en el justifyconent tome la palabra around como clave pero que en
+    //el valor tome space-around
+}

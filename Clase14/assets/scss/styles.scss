@@ -1,0 +1,41 @@
+@import "variables";
+@import "grid";
+
+@mixin propiedades($ancho,$alto,$colorLetra) {
+    width: $ancho;
+    height: $alto;
+    color: $colorLetra;
+}
+
+.btn{
+    padding: map-get($btn, padding);
+    border: map-get($btn, border);
+    border-radius: map-get($btn, border-radius);
+    @include propiedades(100px,auto,white);
+    //include lo puedo usar despues de haber usado el mixin
+}
+
+@each $key , $var in $colores {
+    .btn-#{$key} {
+        //btn-primario/ secunadrio/ terciario
+        @extend .btn;
+        //va a heredar lo del btn de arriba -> padding, border, etc
+        //extender una clase 
+        background-color: $var;
+        //Le agrega el color
+    }
+}
+
+.card{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    @include propiedades(500px,auto,black);
+    .text-card{
+        margin-left: 10px;
+    }
+    button{
+        @extend .btn;
+        background-color: blue;
+    }
+}

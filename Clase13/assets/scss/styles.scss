@@ -5,10 +5,12 @@
 //puedo tener una hoja de SAS por cuantas quieras tener
 // por ejemplo hojas para variables, para el main, etx
 
+//RESPETAR EL ORDEN DE LOS QUE PONGO LOS IMPORTS 
+@import "variables";
 @import "nav";
 @import "main";
 @import "footer";
-@import "variables";
+
 
 *{
     margin:0;

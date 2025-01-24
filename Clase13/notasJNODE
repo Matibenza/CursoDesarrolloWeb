@@ -1,0 +1,14 @@
+Para compilar por node ->
+1. en la consola del protecto: npm init -y
+2. npm i -D node-sass
+3. npm i -D nodemon
+
+4. en el archivo package.json -> "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss Clase13/assets/scss/styles.scss Clase13/assets/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  } MODIFICO ESA PARTE DEL SCRIPT
+
+
+5. En la consola 
+6. cntl + c para cortar 

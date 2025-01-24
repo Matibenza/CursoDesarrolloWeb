@@ -1,0 +1,156 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 10%;
+  }
+  .col-md-2 {
+    width: 20%;
+  }
+  .col-md-3 {
+    width: 30%;
+  }
+  .col-md-4 {
+    width: 40%;
+  }
+  .col-md-5 {
+    width: 50%;
+  }
+  .col-md-6 {
+    width: 60%;
+  }
+  .col-md-7 {
+    width: 70%;
+  }
+  .col-md-8 {
+    width: 80%;
+  }
+  .col-md-9 {
+    width: 90%;
+  }
+  .col-md-10 {
+    width: 100%;
+  }
+}
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.btn, .card button, .btn-dark, .btn-light, .btn-info, .btn-warning, .btn-danger, .btn-terciario, .btn-secundario, .btn-primario {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 100px;
+  height: auto;
+  color: white;
+}
+
+.btn-primario {
+  background-color: #007bff;
+}
+
+.btn-secundario {
+  background-color: #6c757d;
+}
+
+.btn-terciario {
+  background-color: #28a745;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+}
+
+.btn-dark {
+  background-color: #343a40;
+}
+
+.card {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  width: 500px;
+  height: auto;
+  color: black;
+}
+.card .text-card {
+  margin-left: 10px;
+}
+.card button {
+  background-color: blue;
+}

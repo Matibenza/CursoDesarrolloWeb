@@ -1,0 +1,74 @@
+SERVIDORES
+- hardware -> computadora potente. Conectada a la red. Brinda servicios a la web. Son conocidos como host
+Un servidor puede estar comunicandose con muchos clientes.
+
+Importante la seguridad con la conexion con el servidor
+Certificados ssl/ https
+-La iformacion esta cifrada. Si alguien intercepta eso no va a tener forma de ver la informaciomn
+- gararntiza la integridad de los datos. (nadie puede modificar los datos que viajan)
+- autentificacion. Saber que el servidor al que me comunico es ese y el cliente es ese (no hay un tercero que se haga pasar x vos o x el servidor)
+
+UTILIZAR CERTIFICADOS SSL
+-COMPRARLOS -> Hostinger ssl
+subir la pagina a hostinger
+Si uso hostinger como servidor se configura automaticamente.
+
+BUENAS PRACTICAS EN IMAGENES
+- Achicar las imagenes para que ocupen menos espacio
+- Las imagenes y videos son lo que mas ocupan dentro de la pagina web (Si uso youtube ya esta optimizado)
+- Los archivos js son los que siguen
+- Imagenes -> comprimir imagenes.
+si voy al inspector network te dice cuanto tiempo tarda en abrir la pagina web
+- Formato del archivo jpg
+Tipos de comprencion -> con perdida / sin perdida
+- PARA COMPRIMIR USO OPTIMIZILLA (PAGINA INTERNER)
+-FOTOR -> achicar las imagenes (REAJUSTAR)
+ 
+ UTILIZAR SVG
+ (para iconos imagenes. etc) ->PIXABAY.COM -> tengo para descagar. decargo en grafico vectorial 
+
+ SEO
+ ->optimizacion en motores de busqueda.(para que posicione mi pagina lo mas arriba posible en el buscador)
+ Importante tener bien linkeada las paginas. Y que use bien las etiquetas. Ningun link roto
+ ->Palabtas clave (ejemplo si es de una floreria en cordoba) 
+ USAR UNA ETIQUETA <meta name="keywords" content="HTML, META, PALABRAS CLAVE, EJEMPLO,fLORES,CORDOBA,ROSAS">
+ Las palabras clave tambien las busca en el contenido de la pagina. Dentro de las h,etc.
+ NO ABUSAR DE LAS PALABRAS CLAVE
+tenga https
+
+ MIENTRAS MEJOR SE ADAPTE LA PAGINA A DISPPSITIVOS MOBILES MAS ME VA A MOSTAR
+ LA PAGINA DEBE TENER BUEN RENDIMIENTO, SE DEBE CARGAR RAPIDO
+ ETIQUETA TITLE -> DEBE DECIR ALGO QUE HAGA REFERENCIA A LA PAGINA
+ <TITLE> FLORERIA MAXI </TITLE>
+ CREAR UN TIUTLO UNICO POR CADA PAGINA
+ CADA PAGINA DEBE TENER SU PORPIO TITULO PARA SABER DE QUE TRATA CADA PAGINA. TITULO BREVE
+ 
+ OTRA ETIQUETA IMPORTANTE ES LA METTA DESCRIPTION
+ <META NAME="DESCRIPTION" CONTENT="ENVIO DE FLORES NATURALES ESCRITAS..."> ES LO QUE ME APARECE ABAJO DE LA PAGINA CUANDO REALIZO LA BUSQUEDA. QUE NO TENGA MAS DE 250 CARACTERES
+UTILIZAR DESRIPCIONES UNICAS EN CADA PAGINA
+
+LOS ENCABEZADOS SON IMPORTANTES. H1,H2,H3
+NO INCLUIRLAS TANTO. INCLUIRLAS EN ORDEN JERAQUICO
+
+ORGANIZACION DE LOS ARCHIVOS 
+* Que el index o los html no esten tan adentro de tantas carpetas ./pages/productos/rosas/preciosepeciales -> asi no. no muchos directorios o anidados de pagina
+- no usar nombres de directorios que no sean descriptivos
+- enlaces deben estar bienconectados
+- pagina inicio que conecte todas las paginas, todas las paginas puedan ir a otras y a su vez ir a la pagina de inicio
+
+-crearMapa del sitio.
+-Sitemap (todos los links que tienen mi pagina y la importancia)
+xml-sitemaps.com -> decargo y lo tiro en mi proyecto. me dice los links y la fecha den que se modifico 
+
+mas consejos
+utilizar https
+-utilizar alt en las imagenes
+-contenido bien escrito y facil de entender
+- no hacer imagenes con texto con photoshop encima.  poner la imagen y arriba con html poner el texto
+- no hacer parrafos largos
+- evitar poner palabras clave porque si
+
+herramientas para analizar rendimiento
+google search console. -> cantidad de visitar, errores, etc. 
+
+
